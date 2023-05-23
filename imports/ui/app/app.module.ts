@@ -11,22 +11,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
-//Views
-import { Login } from './views/login/login.component';
-import { About } from './views/about/about.component';
-import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
-import { Dashboard } from './views/dashboard/dashboard.component';
-import { Kanban } from './views/kanban/kanban.component';
-
-//Components
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { TasksComponent } from './components/tasks/tasks.component';
-import { KanbanListComponent } from './components/kanban-list/kanban-list.component';
-import { KanbanSidebarComponent } from './components/kanban-sidebar/kanban-sidebar.component';
-import { KanbanCardComponent } from './components/kanban-card/kanban-card.component';
-
-
-
 //PrimeNG
 import {StyleClassModule} from 'primeng/styleclass';
 import {ButtonModule} from 'primeng/button';
@@ -44,8 +28,7 @@ import {ProgressBarModule} from 'primeng/progressbar';
 
 
 //Services
-import { KanbanService } from 'imports/ui/app/services/kanban.service';
-
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   imports: [
@@ -71,15 +54,10 @@ import { KanbanService } from 'imports/ui/app/services/kanban.service';
     ProgressBarModule,
   ],
   providers: [
-    KanbanService
   ],
   declarations: [
     AppComponent,
-    Login,  
-    About,
-    Dashboard,
-    Kanban,
-    PageNotFoundComponent, NavbarComponent, TasksComponent, KanbanListComponent, KanbanSidebarComponent, KanbanCardComponent
+    HomeComponent
   ],
   entryComponents: [
   ],
